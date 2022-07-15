@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Developer Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<div class="table-responsive">
+    <div class="w-25 p-3">
+        <table class="table table-bordered">
+            <thead>
+                <h1>Draft Table</h1>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">NAME</th>
+                <th scope="col">LAST NAME</th>
+                <th scope="col">DOCUMENT ID</th>
+              </tr>
+            </thead>
+            <tbody id="draftTable">             
+            </tbody>
+          </table>
+    </div>   
+</div>
+
+<div class="p-3">
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">ID</label>
+            <input type="text" class="form-control w-25" id="idInput" value="" placeholder="Enter ID if updating or deleting">
+          </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <input type="text" class="form-control w-25" id="nameInput" value="" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Last Name</label>
+          <input type="text" class="form-control w-25" id="lastNameInput" value="" placeholder="Enter last name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Document ID</label>
+            <input type="text" class="form-control w-25" id="documentInput" value="" placeholder="Enter document ID">
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-2" id="submitButton">Submit</button>
+        <button type="update" class="btn btn-warning mt-2" id="updateButton">Update</button>
+        <button type="delete" class="btn btn-danger mt-2" id="deleteButton">Delete</button>
+      </form>
+</div>
+
+<div class="table-responsive"> 
+    <div class="w-25 p-3">
+        <button type="publish" class="btn btn-success mt-2 p-3" id="publishButton">Publish Table</button>
+        <table class="table table-bordered">
+            <thead>
+                <h1>Published Table</h1>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">NAME</th>
+                <th scope="col">LAST NAME</th>
+                <th scope="col">DOCUMENT ID</th>
+              </tr>
+            </thead>
+            <tbody id="publishedTable">             
+            </tbody>
+          </table>
+    </div>   
+</div>
+    <script src="src/index.js"></script>
+</body>
+</html>
